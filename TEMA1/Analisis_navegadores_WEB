@@ -16,6 +16,7 @@ Los desarrolladores en el ecosistema de Microsoft (Azure, .NET, etc.) se benefic
 4. Apple Safari
 Para pruebas de compatibilidad para usuarios de iOS/macOS y depuración de Progressive Web Apps.
 Es el único navegador que utiliza el motor WebKit. Un desarrollador debe usar Safari obligatoriamente para depurar y probar el comportamiento específico del código en iPhones, iPads y Macs, ya que sus motores de JS y renderizado a menudo tienen diferencias sutiles. Sus herramientas son esenciales para garantizar una buena experiencia en el ecosistema Apple, especialmente en el desarrollo móvil y PWAs.
+
 5. Opera GX
 Para entornos de desarrollo multipantalla y gestión de notificaciones.
 Aunque no es el navegador de depuración principal, Opera GX, basado en Chromium, es útil para la gestión del flujo de trabajo. Sus paneles laterales integrados permiten a los desarrolladores mantener abiertas y discretas herramientas de comunicación (Discord, WhatsApp) o notas sin ocupar pestañas ni el monitor principal, ayudando a mantener el enfoque en el código. 
