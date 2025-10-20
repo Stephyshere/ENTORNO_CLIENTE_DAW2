@@ -1,24 +1,46 @@
-Tarea 1.
-¿Qué navegador viene mejor para cada ocasión/tarea?
+## Tarea 1. ¿Qué navegador viene mejor para cada ocasión/tarea? 💻
 
-1. Google Chrome
-Usado para depuración profunda, perfilado de rendimiento y desarrollo en general.
-Destaca por que sus Chrome DevTools son el estándar de oro de la industria. Son las más robustas, maduras y con mayor cantidad de funciones para depurar JavaScript (JS), inspeccionar la red, auditar rendimiento y simular dispositivos móviles. Dado que Chrome domina la cuota de mercado, es el primer navegador donde un desarrollador garantiza que el código funcione correctamente.
+---
 
-2. Mozilla Firefox
-Uso principal en pruebas de estándares web (Gecko Engine) y trabajo con CSS/Accesibilidad.
-Firefox es crucial para asegurar la compatibilidad entre navegadores porque usa su propio motor (Gecko), no Chromium. Sus DevTools son excelentes, destacando especialmente en la inspección y modificación de CSS Grid y Flexbox con herramientas visuales únicas. También ofrece mejores herramientas para la accesibilidad que otros navegadores.
+### 1. Google Chrome (Motor: Chromium) 🥇
 
-3. Microsoft Edge
-Usado mayormente en desarrollo en entornos Microsoft y pruebas de rendimiento en Chromium; Al estar basado en Chromium, su experiencia en DevTools es casi idéntica a la de Chrome, pero con una ventaja: consume menos recursos del sistema. 
-Los desarrolladores en el ecosistema de Microsoft (Azure, .NET, etc.) se benefician de su integración con herramientas de Azure y la suite de Microsoft 365, usándolo como un segundo navegador de pruebas basado en Chromium.
+| Uso Principal | Características Clave |
+| :--- | :--- |
+| **Depuración profunda, perfilado de rendimiento y desarrollo en general.** | Sus **Chrome DevTools** son el **estándar de oro** de la industria. Son las más robustas, maduras y con mayor cantidad de funciones para depurar **JavaScript (JS)**, inspeccionar la red, auditar rendimiento y simular dispositivos móviles. |
+| **Primer navegador de prueba** | Dado que Chrome domina la cuota de mercado, es el primer navegador donde un desarrollador garantiza que el código funcione correctamente. |
 
-4. Apple Safari
-Para pruebas de compatibilidad para usuarios de iOS/macOS y depuración de Progressive Web Apps.
-Es el único navegador que utiliza el motor WebKit. Un desarrollador debe usar Safari obligatoriamente para depurar y probar el comportamiento específico del código en iPhones, iPads y Macs, ya que sus motores de JS y renderizado a menudo tienen diferencias sutiles. Sus herramientas son esenciales para garantizar una buena experiencia en el ecosistema Apple, especialmente en el desarrollo móvil y PWAs.
+---
 
-5. Opera GX
-Para entornos de desarrollo multipantalla y gestión de notificaciones.
-Aunque no es el navegador de depuración principal, Opera GX, basado en Chromium, es útil para la gestión del flujo de trabajo. Sus paneles laterales integrados permiten a los desarrolladores mantener abiertas y discretas herramientas de comunicación (Discord, WhatsApp) o notas sin ocupar pestañas ni el monitor principal, ayudando a mantener el enfoque en el código. 
-Es una versión de Opera con herramientas estándar de desarrollo (inspección de elementos, depuración) accesibles de forma convencional, pero que ofrece ventajas adicionales como el control de recursos (CPU, RAM, red) para optimizar el rendimiento de las aplicaciones web y un entorno altamente personalizable.
+### 2. Mozilla Firefox (Motor: Gecko) 🦊
 
+| Uso Principal | Características Clave |
+| :--- | :--- |
+| **Pruebas de estándares web y trabajo con CSS/Accesibilidad.** | Crucial para asegurar la **compatibilidad entre navegadores** porque usa su propio motor (**Gecko**), no Chromium. |
+| **DevTools Destacadas** | Sus herramientas de desarrollo son excelentes, destacando especialmente en la inspección y modificación de **CSS Grid** y **Flexbox** con herramientas visuales únicas. También ofrece **mejores herramientas para la accesibilidad** que otros navegadores. |
+
+---
+
+### 3. Microsoft Edge (Motor: Chromium) 💎
+
+| Uso Principal | Características Clave |
+| :--- | :--- |
+| **Desarrollo en entornos Microsoft y pruebas de rendimiento en Chromium.** | Al estar basado en Chromium, su experiencia en DevTools es casi idéntica a la de Chrome, pero con una ventaja: **consume menos recursos del sistema**. |
+| **Integración** | Desarrolladores en el ecosistema de Microsoft (**Azure, .NET**, etc.) se benefician de su **integración** con herramientas de Azure y la *suite* de Microsoft 365, usándolo como un segundo navegador de pruebas basado en Chromium. |
+
+---
+
+### 4. Apple Safari (Motor: WebKit) 🍎
+
+| Uso Principal | Características Clave |
+| :--- | :--- |
+| **Pruebas de compatibilidad para usuarios de iOS/macOS y depuración de Progressive Web Apps (PWAs).** | Es el **único navegador** que utiliza el motor **WebKit**. |
+| **Ecosistema Apple** | Un desarrollador debe usar Safari obligatoriamente para depurar y probar el comportamiento específico del código en **iPhones, iPads y Macs**, ya que sus motores de JS y renderizado a menudo tienen diferencias sutiles. Sus herramientas son esenciales para garantizar una buena experiencia en el **ecosistema Apple**, especialmente en el desarrollo móvil y PWAs. |
+
+---
+
+### 5. Opera GX (Motor: Chromium) 🎮
+
+| Uso Principal | Características Clave |
+| :--- | :--- |
+| **Entornos de desarrollo multipantalla y gestión de notificaciones.** | Útil para la gestión del **flujo de trabajo** gracias a sus **paneles laterales integrados**. |
+| **Flujo de Trabajo y Rendimiento** | Los paneles permiten mantener abiertas y discretas herramientas de comunicación (**Discord, WhatsApp**) o notas sin ocupar pestañas ni el monitor principal, ayudando a mantener el enfoque. Ofrece **control de recursos (CPU, RAM, red)** para optimizar el rendimiento de las aplicaciones web y un entorno altamente personalizable. |
