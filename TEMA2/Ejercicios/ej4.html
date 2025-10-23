@@ -1,0 +1,17 @@
+<script>
+    //pedir al usuario que introduzca edad
+    let edadUsuario = prompt("Por favor, introduce tu edad:");
+    
+    //mensaje 
+    if (edadUsuario == 1 && edadUsuario <= 12) {
+        alert("Niño.");
+    } if (edadUsuario ==13 && edadUsuario <= 26) {
+        alert("JOVEN.");
+    } if (edadUsuario ==26 && edadUsuario <= 60) {
+        alert("ADULTO.");
+    } if (edadUsuario > 60) {
+        alert("ANCIANO.");
+    } if (edadUsuario == "0") {
+        alert("No puedes tener 0 años.");
+    }
+</script>

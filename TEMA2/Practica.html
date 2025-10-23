@@ -1,23 +1,121 @@
 <html>
 <head>
     <utf-8>
-    <title>Instrucciones de Salida</title>
+    <title>TEORIA JAVASCRIPT</title>
 </head>
     <body>  
        <p><h1> Inicio </h1></p>
        <P id="Ejemplo"> Este es un ejemplo de innerHTML</P>
         <script>
-            window.alert("Hola, ¿como estas?!");  //Muestra un mensaje en una ventana
-            document.write("<h2>JIJIJIJI</h2>"); //Escribe en el documento
-            innerHTML = document.getElementById("Ejemplo").innerHTML = "BUENOS DIAS"; //Cambia un texto del documento por otro
-            console.log("Mensaje en la consola JIJIJI"); //Escribe en la consola
-            console.log(innerHTML); //Escribe el texto del innerHTML en la consola
-            alert(2+3); //Muestra el resultado en otra alerta
-            document.write(5/7); //Escribe el resultado en el documento
-            console.log(3*4); //Escribe el resultado en la consola.
+            //ELEMENTOS DE SALIDA
+            window.alert("Hola, ¿como estas?!"); //Una ventana emergente
+            document.write("<h2>JIJIJIJI</h2>"); //Escribe directamente en el documento HTML
+            innerHTML = document.getElementById("Ejemplo").innerHTML = "BUENOS DIAS"; //Modifica el contenido HTML de un elemento
+            console.log("Mensaje en la consola JIJIJI"); //Muestra un mensaje en la consola del navegador
+            console.log(innerHTML);    //Muestra el contenido modificado en la consola
+            alert(2+3);
+            document.write(5/7);
+            console.log(3*4);
+
+            //ELEMENTOS BASICOS
+                //VALORES VARIABLES
+                    var nombre = "Carlos";
+                    var edad = 25;
+
+                //OPERADORES
+                    //tipos: Aritmeticos, de asignacion, comparacion, logicos
+
+                    //ejemplo Aritmeticos
+                    var suma = 5 + 3;
+                    var resta = 10 - 4;
+                    var multiplicacion = 6 * 7;
+                    var division = 20 / 5;
+                    //ejemplo de Asignacion
+                    var x = 10;
+                    //ejemplo de Comparacion
+                    var esIgual = (x == 10);
+
+                    //ejemplo de Logicos
+                    var esMayorYMenor = (x > 5 && x < 15);
+
+                //TIPOS DE DATOS
+                    var texto = "Hola Mundo";
+                    var numero = 42;
+                    var booleano = true;
+                    var arreglo = [1, 2, 3, 4, 5];
+                    var objeto = {nombre: "Ana", edad: 30};
+
+                //EXPRESIONES
+                    //una expresion es cualquier combinacion de valores, variables y operadores que produce un valor
+                    var resultado = (5 + 3) * 2;  
+
+                //Palabras reservadas
+                    //Son palabras que tienen un significado especial en JavaScript y no pueden ser utilizadas como nombres de variables o funciones
+                    //Ejemplos: var, function, if, else, return, true, false, null, undefined
+
+                //Comentarios
+                    //Son anotaciones en el codigo que no son ejecutadas por el interprete de JavaScript
+                    //Sirven para explicar el codigo y hacerlo mas legible
+                    //Ejemplos:
+                    //Este es un comentario de una sola linea
+                    /*
+                        Este es un comentario
+                        de multiple linea
+                    */
+
+                    //identificadores
+                    //Son los nombres que se le dan a las variables, funciones y otros elementos en Java
+                    var miVariable = 10;
+
+                //SENTENCIAS
+                    //Son las instrucciones que se ejecutan en un programa de JavaScript
+                    //Ejemplo:
+                    if (edad >= 18) {
+                        console.log("Eres mayor de edad");
+                    } else {
+                        console.log("Eres menor de edad");
+                    }
+
+                    //Practica Sentencias.
+                    //tres variables: nombre, edad, ciudad con alert
+                    var nombre = "Estefania";
+                    var edad = 28
+                    var ciudad = "Masarrón";
+                    alert("Nombre: " + nombre + "\nEdad: " + edad + "\nCiudad: " + ciudad);
+
+                    //varias sentencias:
+                    var nombre = "STEPHY"; var edad = 28; var ciudad = "MASARRÓN"
+                    alert("Nombre: " + nombre + "\nEdad: " + edad + "\nCiudad: " + ciudad);
+
+                    //Espacios en blanco
+                        //Son caracteres que no se muestran en la pantalla pero que ayudan a organizar el codigo y hacerlo mas legible
+                        //Ejemplo:
+                        var   miVariable   =   10; //Los espacios en blanco no afectan la ejecucion del codigo
+                
+                //BLOQUES DE CODIGO
+                    //Son conjuntos de sentencias que se agrupan entre llaves {}
+                    //Ejemplo:
+                    {
+                        var a = 5;
+                        var b = 10;
+                        var suma = a + b;
+                        console.log("La suma es: " + suma);
+                    }
+                
+                //VARIABLES DE TIPO LET Y CONST
+                    //let: Permite declarar variables con alcance de bloque
+                    let ciudad = "Madrid";
+                    console.log(ciudad);
+
+                    //const: Permite declarar constantes, cuyo valor no puede cambiar
+                    const PI = 3.1416;
+                    console.log(PI);
+                
+
+
+
         </script>
 
 
     </body>
-
 </html>
