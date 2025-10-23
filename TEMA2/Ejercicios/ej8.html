@@ -1,30 +1,30 @@
 <script>
-    const RESPUESTA_CORRECTA = "adolfo suarez";
-
-    function normalizarRespuesta(respuesta) {
+   
+    function norm(respuesta) {
         if (respuesta === null) return null; // Devuelve null si pulsa Cancelar
-        return respuesta.trim().toLowerCase()
+        return respuesta.trim().toLowerCase().normalize("NFD");
             
     }
 
-    let respuestaUsuarioNormalizada = "";
-    let mensajePrompt = "¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
+    const RESPUESTA_CORRECTA = "adolfo suarez";
+    let respuestaUsuario = "";
+    let mensaje = "¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
 
-    while (respuestaUsuarioNormalizada !== RESPUESTA_CORRECTA) {
-        const respuesta = prompt(`CONTROL PARENTAL: ${mensajePrompt}`);
+    while (respuestaUsuario !== RESPUESTA_CORRECTA) {
+        const respuesta = prompt(`CONTROL PARENTAL: ${mensaje}`);
         
-        respuestaUsuarioNormalizada = normalizarRespuesta(respuesta);
+        respuestaUsuario = norm(respuesta);
 
-        if (respuestaUsuarioNormalizada === null) {
-            mensajePrompt = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
+        if (respuestaUsuario === null) {
+            mensaje = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
             continue;
         }
 
         // Comprobación de éxito
-        if (respuestaUsuarioNormalizada === RESPUESTA_CORRECTA) {
+        if (respuestaUsuario === RESPUESTA_CORRECTA) {
             break; // Éxito, salir del bucle
         } else {
-            mensajePrompt = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
+            mensaje = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
         }
     }
 
