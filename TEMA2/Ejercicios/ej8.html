@@ -1,8 +1,6 @@
 <script>
-        // La respuesta correcta, normalizada a minúsculas y sin acentos.
     const RESPUESTA_CORRECTA = "adolfo suarez";
 
-    // Función auxiliar para normalizar el texto del usuario (minúsculas, sin acentos, sin espacios extras).
     function normalizarRespuesta(respuesta) {
         if (respuesta === null) return null; // Devuelve null si pulsa Cancelar
         return respuesta.trim().toLowerCase()
@@ -13,14 +11,11 @@
     let respuestaUsuarioNormalizada = "";
     let mensajePrompt = "¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
 
-    // Bucle principal: Sigue pidiendo la respuesta mientras no sea la correcta.
     while (respuestaUsuarioNormalizada !== RESPUESTA_CORRECTA) {
-        // Solicita la respuesta al usuario usando el mensaje dinámico
         const respuesta = prompt(`CONTROL PARENTAL: ${mensajePrompt}`);
         
         respuestaUsuarioNormalizada = normalizarRespuesta(respuesta);
 
-        // Si el usuario pulsa 'Cancelar', se reinicia el mensaje.
         if (respuestaUsuarioNormalizada === null) {
             mensajePrompt = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
             continue;
@@ -30,12 +25,10 @@
         if (respuestaUsuarioNormalizada === RESPUESTA_CORRECTA) {
             break; // Éxito, salir del bucle
         } else {
-            // Mensaje de error único para cualquier respuesta incorrecta
             mensajePrompt = "ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española? (Nombre y Apellido)";
         }
     }
 
-    // Mensaje de éxito una vez que el bucle termina (acceso concedido).
 
     document.write('¡ACCESO CONCEDIDO!');
     document.write('La respuesta correcta era Adolfo Suárez.');
