@@ -1,0 +1,26 @@
+<script>
+
+let edadUsuarioString = prompt("Por favor, introduce tu edad:");
+
+let edadUsuario = parseInt(edadUsuarioString, 10); 
+
+
+if (isNaN(edadUsuario) || edadUsuario == 0) {
+    alert("Entrada inválida. Por favor, introduce una edad válida.");
+} else {
+    switch(true){
+        case (edadUsuario <= 12):
+            alert( "Es un niño");
+            break;
+        case (edadUsuario <= 26):
+            alert("Es un joven");
+            break;
+        case (edadUsuario <= 60):
+            alert("Es un adulto");
+            break;
+        default:
+            alert("Es un jubilado");
+            break;
+    }
+}
+</script>

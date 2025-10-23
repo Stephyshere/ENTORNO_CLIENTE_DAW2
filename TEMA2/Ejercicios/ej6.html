@@ -1,0 +1,25 @@
+  <script>
+   const HORA_INICIO = 9;
+const HORA_FIN = 21;
+const INTERVALO_MINUTOS = 5;
+const INICIO_MINUTOS = HORA_INICIO * 60;
+const FIN_MINUTOS = HORA_FIN * 60;
+
+document.write("<ul>");
+
+for (let tiempoMinutos = INICIO_MINUTOS; tiempoMinutos <= FIN_MINUTOS; tiempoMinutos += INTERVALO_MINUTOS) {
+    // Calcula la hora y minutos
+    const hora = Math.floor(tiempoMinutos / 60);
+    const minuto = tiempoMinutos % 60;
+
+    // Función para asegurar el formato de dos dígitos (ej: 9 -> 09)
+    const padTime = (num) => String(num).padStart(2, '0');
+
+    const mensaje = `${padTime(hora)}:${padTime(minuto)}`;
+    
+    document.write(`<li style="list-style: none;">${mensaje}</li>`);
+}
+
+document.write("</ul>");
+
+        </script>

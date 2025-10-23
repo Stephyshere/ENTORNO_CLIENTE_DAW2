@@ -1,0 +1,11 @@
+<script>
+const APELLIDO_CORRECTO = "suarez";
+let respuestaUsuario = ""; 
+
+while (respuestaUsuario === null || respuestaUsuario.toLowerCase() !== APELLIDO_CORRECTO) {
+    respuestaUsuario = prompt("CONTROL PARENTAL: Escriba el apellido del primer presidente de la democracia en España.");
+}
+
+document.write('<div class="access-granted mt-6">¡ACCESO CONCEDIDO!</div>');
+document.write('<p class="text-gray-700 mt-4">Bienvenido/a a la página.</p>');
+</script>

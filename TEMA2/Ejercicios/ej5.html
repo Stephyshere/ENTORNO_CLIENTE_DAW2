@@ -1,0 +1,25 @@
+<script>
+    const HORA_INICIO = 9;
+    const MINUTOS_FINAL = 21 * 60 + 30; // 21:30 en minutos totales (1290)
+    const INTERVALO = 30; // Intervalo de 30 minutos
+    const INICIO_MINUTOS = HORA_INICIO * 60; // 9:00 en minutos totales (540)
+
+    // Función concisa para asegurar el formato de dos dígitos (ej: 9 -> 09)
+    const padTime = (num) => String(num).padStart(2, '0');
+
+    document.write("<ul>");
+
+    // Iterar desde 9:00 (540 minutos) hasta 21:30 (1290 minutos)
+    for (let tiempoMinutos = INICIO_MINUTOS; tiempoMinutos <= MINUTOS_FINAL; tiempoMinutos += INTERVALO) {
+        // Calcula la hora y minutos
+        const hora = Math.floor(tiempoMinutos / 60);
+        const minuto = tiempoMinutos % 60;
+
+        // Formatear y escribir el tiempo
+        const mensaje = `${padTime(hora)}:${padTime(minuto)}`;
+        
+        document.write(`<li style="list-style: none;">${mensaje}</li>`);
+    }
+
+    document.write("</ul>");
+</script>
