@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tablas: Multiplicar y Dividir</title>
+    <script src="js/tablaMultiplicar.js"></script>
+    <script src="js/tablaDividir.js"></script>
+    <style>
+        /* Estilos básicos para ver las dos secciones lado a lado */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+        }
+        .container {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tabla de Multiplicar ✖️</h2>
+        <form onsubmit="mostrarTabla(event)">
+            <label for="numeroMultiplicar">Número para Multiplicar (0-10):</label>
+            <input id="numeroMultiplicar" type="number" required />
+            <input type="submit" value="Mostrar tabla" />
+        </form>
+        <div id="tablaMultiplicar"></div>
+    </div>
+
+    <div class="container">
+        <h2>Tabla de Dividir ➗</h2>
+        <form onsubmit="mostrarDivision(event)">
+            <label for="numeroDividir">Dividendo (0-10):</label>
+            <input id="numeroDividir" type="number" required />
+            <input type="submit" value="Mostrar tabla" />
+        </form>
+        <div id="tablaDividir"></div>
+    </div>
+
+</body>
+</html>
